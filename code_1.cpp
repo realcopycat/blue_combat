@@ -38,7 +38,7 @@ int line;
 const int MaxN = 10000;
 int data[MaxN];  // 数据数组
 
-int main_() {
+int main() {
     scanf("%d", &line);  // 获取输入的数字，这里是行数
     getchar();  // 可以把换行符给吃掉
     int index = 0;
