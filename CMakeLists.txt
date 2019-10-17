@@ -3,4 +3,4 @@ project(blue_combat)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(blue_combat code_1.cpp try_1.cpp try_2.cpp)
+add_executable(blue_combat code_2.cpp)

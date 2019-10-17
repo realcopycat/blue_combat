@@ -41,7 +41,7 @@ int main()
 
      vector<array<char, 4>> vec;  // 这个似乎是比较进阶的做法了，这个意味着这个向量的元素是一个数组，这个数组可以装下四个字符串
 
-    istringstream input("abc|def|gh");
+    istringstream input("abc|def|gh");  // 这个istringstream似乎是用于构建一个流的
 
     for(array<char, 4> a; input.getline(&a[0], 4, '|'); ) {
         vec.push_back(a);
@@ -52,9 +52,13 @@ int main()
          *
          * 从这个input里getline， 究竟怎么getline呢？
          *
-         * 第一个参数是指针，要开始写入的指针，
+         * 第一个参数是指针，要开始写入的指针，给出开始的位置就OK了
          * 第二个参数指出了由第一个指针所指出的规模
          * 第三个参数指出了每一行所需的分隔符
          * */
+    }
+
+    for(auto& a : vec) {
+        cout << &a[0] << '\n';
     }
 }
